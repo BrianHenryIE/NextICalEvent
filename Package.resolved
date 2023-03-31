@@ -28,6 +28,15 @@
       }
     },
     {
+      "identity" : "swift-aws-lambda-events",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swift-server/swift-aws-lambda-events.git",
+      "state" : {
+        "revision" : "8e836e0893bc906fafd6b09e1c46a7efcc441fd5",
+        "version" : "0.1.0"
+      }
+    },
+    {
       "identity" : "swift-aws-lambda-runtime",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/swift-server/swift-aws-lambda-runtime.git",
@@ -68,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-nio.git",
       "state" : {
-        "revision" : "45167b8006448c79dda4b7bd604e07a034c15c49",
-        "version" : "2.48.0"
+        "revision" : "9b2848d76f5caad08b97e71a04345aa5bdb23a06",
+        "version" : "2.49.0"
       }
     },
     {
@@ -77,8 +86,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-nio-extras.git",
       "state" : {
-        "revision" : "d75ed708d00353acf173ca23018b6bd46f949464",
-        "version" : "1.17.0"
+        "revision" : "cc1e5275079380c859417dbea8588531f1a90ec3",
+        "version" : "1.18.0"
       }
     },
     {

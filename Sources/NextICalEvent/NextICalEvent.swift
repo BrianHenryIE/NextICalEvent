@@ -6,26 +6,21 @@ import AWSLambdaRuntime
 import ICalSwift
 import NextICalEventParser
 import Foundation
+import AWSLambdaEvents
 import AsyncHTTPClient
 
-struct Input: Codable {
-    let number: Double
-}
+struct EventResponse: Codable {
 
-struct Number: Codable {
-    let result: Double
+    let title: String
+
+    let utcTime: Date
 }
 
 @main
-struct NextICalEventHandler: LambdaHandler {
-    typealias Event = Input
+struct NextICalEventHandler: SimpleLambdaHandler {
     typealias Output = EventResponse
 
-    init(context: LambdaInitializationContext) async {
-
-    }
-
-    func handle(_ event: Input, context: LambdaContext) async throws -> Output {
+    func handle(_ request: APIGatewayV2Request, context: LambdaContext) async throws -> EventResponse {
 
         let myURLString = "https://calendar.google.com/calendar/ical/admin%40sacbikekitchen.org/public/basic.ics"
 

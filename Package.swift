@@ -25,6 +25,10 @@ let package = Package(
                     .upToNextMajor(from:"1.0.0-alpha.1")
             ),
             .package(
+                    url: "https://github.com/swift-server/swift-aws-lambda-events.git",
+                    .upToNextMajor(from:"0.1.0")
+            ),
+            .package(
                     url: "https://github.com/swift-server/async-http-client.git",
                     from: "1.9.0"
             )
@@ -34,6 +38,7 @@ let package = Package(
                     name: "NextICalEvent",
                     dependencies: [
                         .product(name: "AWSLambdaRuntime", package: "swift-aws-lambda-runtime"),
+                        .product(name: "AWSLambdaEvents", package: "swift-aws-lambda-events"),
                         "NextICalEventParser",
                         .product(name: "AsyncHTTPClient", package: "async-http-client"),
                     ],
